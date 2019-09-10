@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/marginStartAuthorDetail"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/headerTitle"
+        style="@style/headerTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/authorsInformation" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/marginTopHeader"
+        android:background="@android:color/darker_gray"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detailPadding">
+
+        <ImageView
+            android:id="@+id/authorImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            tools:src="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp25"
+            android:layout_toEndOf="@+id/authorImage"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/detailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gemTitle" />
+
+                <TextView
+                    android:id="@+id/gemTitle"
+                    style="@style/detailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopDetail">
+
+                <TextView
+                    style="@style/detailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/egNumber" />
+
+                <TextView
+                    android:id="@+id/epicGemNumber"
+                    style="@style/detailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopDetail"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/detailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/authorsId" />
+
+                <TextView
+                    android:id="@+id/authorId"
+                    style="@style/detailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopDetail">
+
+                <TextView
+                    style="@style/detailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/authorsName" />
+
+                <TextView
+                    android:id="@+id/authorName"
+                    style="@style/detailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/marginTopHeader"
+        android:background="@android:color/darker_gray"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_curved_rec_blue"
+        android:gravity="center_vertical"
+        android:paddingStart="14dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="7dp">
+
+        <TextView
+            style="@style/noteTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/dp50"
+            android:text="@string/noteEpicGemAuthorDetail"
+            tools:text="@string/noteEpicGemAuthorDetail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_curved_rec_blue_stroke"
+            android:drawableLeft="@drawable/warning"
+            android:drawablePadding="@dimen/marginDrawableLeft"
+            android:gravity="center_vertical"
+            android:text="@string/reportIssue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/marginTopHeader"
+        android:background="@drawable/bg_curved_rec_dark_blue"
+        android:padding="@dimen/paddingAuthorHeader">
+
+        <TextView
+            style="@style/authorBioHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/authorBio" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@drawable/bg_curved_rec_black">
+
+        <!--textview.setMovementMethod(new ScrollingMovementMethod());
+-->
+        <TextView
+            style="@style/detailTextStyle"
+            android:id="@+id/textViewAuthorBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:scrollbars="vertical"
+            tools:text="@tools:sample/lorem/random" />
+    </LinearLayout>
+
+
+</LinearLayout>

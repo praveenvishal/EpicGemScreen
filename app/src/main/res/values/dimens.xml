@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="detailPadding">8dp</dimen>
+    <dimen name="marginTopDetail">7dp</dimen>
+    <dimen name="marginDrawableLeft">8dp</dimen>
+    <dimen name="paddingAuthorHeader">10dp</dimen>
+    <dimen name="marginStartAuthorDetail">30dp</dimen>
+    <dimen name="dp25">25dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+</resources>

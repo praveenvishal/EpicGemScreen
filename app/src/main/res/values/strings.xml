@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EpicGemScreen</string>
+    <string name="reportIssue">Report Issue</string>
+    <string name="noteEpicGemAuthorDetail">Note: The contents of this Gem and the information set out below  are the sole responsibilty of the respective author.If you see any issue,please let us know by reporting this Gem.</string>
+    <string name="authorBio">Author Bio</string>
+    <string name="gemTitle">Gem Title:</string>
+    <string name="egNumber">EG Number:</string>
+    <string name="authorsId">Author\'s Id</string>
+    <string name="authorsName">Author\'s Name</string>
+    <string name="authorsInformation">Author Information</string>
+</resources>
